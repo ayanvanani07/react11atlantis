@@ -1,0 +1,89 @@
+@use "../../../scss/typography/typography.scss" as *;
+
+.atlantisreports {
+  padding: 60px 0;
+
+  .altantisReports-container {
+    max-width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      @include font32;
+      color: var(--heading-blue);
+      font-weight: 400;
+    }
+
+    span,
+    .seperate {
+      border-bottom: 1px solid #0057b7;
+      margin: 1.25rem auto;
+      display: block;
+      width: 120px;
+    }
+
+    .text-container {
+      margin-bottom: 30px;
+      .text-p {
+        display: flex;
+        justify-self: center;
+        max-width: 600px;
+
+        p {
+          @include font15;
+          line-height: 21px;
+          color: #282828;
+        }
+      }
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .card-grid-space {
+        padding: 0 10px;
+
+        .card {
+          text-align: start;
+          max-width: 550px;
+          .img-div {
+            // max-width: 550px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .card-body {
+            max-width: 550px;
+            padding: 10px 50px 0 0;
+            h4 {
+              @include font22;
+              padding: 5px 0 10px 0;
+              line-height: 24px;
+              color: var(--heading-blue);
+              font-weight: 400;
+            }
+
+            p {
+              margin-bottom: 10px;
+              @include font15;
+              line-height: 21px;
+              font-weight: 400;
+            }
+
+            button {
+              @include font12;
+              min-width: 190px;
+              padding: 10px 0;
+              max-width: 36%;
+              background-color: var(--button-background);
+              color: white;
+              border: var(--button-background);
+            }
+          }
+        }
+      }
+    }
+  }
+}

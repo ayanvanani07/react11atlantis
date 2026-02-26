@@ -1,0 +1,43 @@
+.full-container {
+  background-color: var(--theme-background-blue);
+  color: white;
+
+  .footer-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 37px 0 21px;
+
+    .footer-con-content {
+      display: flex;
+
+      .logo {
+        max-width: 150px;
+        margin: 0 35px 0 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .footer-content {
+        display: flex;
+        gap: 20px;
+        padding: 0 0 28px 0;
+
+        .content {
+          padding-right: 10px;
+          .heading-name {
+            font-size: 17px;
+            padding-bottom: 10px;
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: 400;
+            padding: 3px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

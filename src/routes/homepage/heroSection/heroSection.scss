@@ -1,0 +1,23 @@
+.image-con {
+  background-image: url("../../../assets/images/AtlantisThePalmFrontal.webp");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  .image-content {
+    // width: 47%;
+    padding: 6.5%;
+    color: white;
+    margin-bottom: 15px;
+    max-width: 600px;
+
+    h1 {
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 48px;
+      text-transform: capitalize;
+    }
+  }
+}

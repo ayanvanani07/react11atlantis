@@ -1,0 +1,57 @@
+@use "../../../scss/typography/typography.scss" as *;
+
+.options-container {
+  .text-container {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    max-width: 53.473%;
+
+    h2 {
+      @include font32;
+      color: var(--heading-blue);
+      font-weight: 400;
+    }
+    span,
+    .seperate {
+      border-bottom: 1px solid #0057b7;
+      margin: 1.25rem auto;
+      display: block;
+      width: 120px;
+    }
+    .text-p {
+      p {
+        @include font15;
+        line-height: 21px;
+        color: #282828;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+    }
+    button {
+       @include font12;
+      min-width: 190px;
+      padding: 10px 0;
+      //   max-width: 36%;
+      background-color: var(--button-background);
+      color: white;
+      border: var(--button-background);
+    }
+  }
+
+  .img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+
+    .img {
+      padding: 20px;
+      max-width: 800px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
